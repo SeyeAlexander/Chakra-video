@@ -1,6 +1,6 @@
 ## Chakra Video
 
-FootVille, an E-commerce store Project with a fully featured API.
+A Video search app enabled by the YouTube search Api, request and play featured videos.
 
 - Use the Youtube Api to get a list of requested videos
 
@@ -23,4 +23,4 @@ yarn
 
 ## Other
 
-**ojubanirealex@gmail.com** **@aexiedaCoulter**
+**ojubanirealex@gmail.com** , Twitter @aexiedaCoulter
