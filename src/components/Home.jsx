@@ -10,7 +10,8 @@ const Home = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
 
   useEffect(() => {
-    handleTermSubmit("Chakra tutorialsimage.png");
+    // this is a default search term, homepage loads up with default term
+    handleTermSubmit("Chakra tutorial");
   }, []);
 
   const handleTermSubmit = async (term) => {
