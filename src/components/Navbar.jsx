@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <Flex alignItems='center' justify='space-between' w='full'>
       <Box p='2'>
-        <Heading size='md'>Video Chakra</Heading>
+        <Heading size='md'>Chakra Video</Heading>
       </Box>
       <Box p='1'>
         <IconButton

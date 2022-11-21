@@ -3,8 +3,7 @@
 A Video search app enabled by the YouTube search Api, request and play featured videos.
 
 - Use the Youtube Api to get a list of requested videos
-
-Personal development project, on server side scripting, using NodeJs, Express, MongoDb and Mongoose and other modern technologies.
+- Check it out here, [Chakra video](https://videochakra.netlify.app/)
 
 2022.
 
