@@ -1,4 +1,4 @@
-import { Box, Container, Flex } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import youtube from "../api/youtube";
 import SearchBar from "./SearchBar";
@@ -11,7 +11,7 @@ const Home = () => {
 
   useEffect(() => {
     // this is a default search term, homepage loads up with default term
-    handleTermSubmit("Chakra tutorial");
+    handleTermSubmit("Drake");
   }, []);
 
   const handleTermSubmit = async (term) => {
@@ -34,13 +34,16 @@ const Home = () => {
 
   return (
     <Box>
-      <Container maxW='container.xl' p={0}>
-        <SearchBar onSearchSubmit={handleTermSubmit} />
-        <Flex py='5' pl={{ base: "8", md: "0" }} h='auto' direction={{ base: "column", md: "row" }}>
-          {selectedVideo && <VideoDetail video={selectedVideo} />}
-          {videos.length > 0 && <VideoList videos={videos} onVideoSelect={handleVideoClick} />}
-        </Flex>
-      </Container>
+      <SearchBar onSearchSubmit={handleTermSubmit} />
+      <Flex
+        py='5'
+        pl={{ base: "8", md: "0" }}
+        direction={{ base: "column", md: "row" }}
+        overflow='hidden'
+      >
+        {selectedVideo ? <VideoDetail video={selectedVideo} /> : null}
+        {videos.length > 0 ? <VideoList videos={videos} onVideoSelect={handleVideoClick} /> : null}
+      </Flex>
     </Box>
   );
 };

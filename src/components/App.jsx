@@ -1,13 +1,13 @@
-import { Box } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
 import Home from "./Home";
 import Navbar from "./Navbar";
 
 const App = () => {
   return (
-    <Box>
+    <Container maxW='8xl' mx='auto'>
       <Navbar />
       <Home />
-    </Box>
+    </Container>
   );
 };
 
